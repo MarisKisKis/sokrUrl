@@ -29,7 +29,7 @@ func postUrl(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusCreated, gin.H{
-		"Сокращенный url": res2,
+		"url": res2,
 	})
 	return
 }
@@ -44,7 +44,7 @@ func getFullUrl(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{
-		"Полный url": url,
+		"url": url,
 	})
 	return
 }
